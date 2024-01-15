@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- custome css files -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <!-- header section start -->
+    <header class="header-area">
+        <nav>
+            <div class="logo-area">
+                <img src="images/logo.png" alt="logo" id="logo">
+                <h3 class="logo-title">Honey<span class="travel-org">Travels</span></h3>
+            </div>
+            <!-- <div class="nav-bar"> -->
+                <ul>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">Packages</a></li>
+                    <li><a href="">Testimonial</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            <!-- </div> -->
+        </nav>
+        <div class="banner">
+            <div class="content">
+                <h3 class="banner-title">Explore Your Travel</h3>
+                <p class="banner-descr">
+                    Journey into new destinations, cultures, and experiences. Discover the world's wonders, create memories, and embrace adventure with exploration.
+                </p>
+                <form action="" class="find-area" id="form">
+                    <div class="card">
+                        <input type="text" placeholder="Where go" name="where">
+                    </div>
+                    <div class="card select">
+                        <label for="day-select">When</label>
+                        <select name="day-select" id="day-select">
+                            <option value=""></option>
+                            <option value="sunday">Sunday</option>
+                        </select>
+                    </div>
+                    <div class="card select">
+                        <label for="item">Select Type</label>
+                        <select name="item" id="item">
+                            <option value=""></option>
+                            <option value="bus">Bus</option>
+                        </select>
+                    </div>
+                    <div class="card">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i> Find Now</button>
+                    </div>
+                </form>
+            </div>
+            <div class="banner-img">
+                <img src="images/banner.png" alt="banner">
+            </div>
+        </div>
+    </header>
 </body>
 </html>
