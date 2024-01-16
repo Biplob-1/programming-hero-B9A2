@@ -279,8 +279,7 @@ main{
 }
 .choose-us-card-title{
     color: #131318;
-    /* text-align: center; */
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 .choose-us-card-desc{
@@ -357,7 +356,7 @@ main{
     cursor: pointer;
     border-radius: 8px;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 800;
 }
 .newsletter-form input[type="submit"]:hover {
@@ -375,11 +374,11 @@ main{
 }
 .offer h6{
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding-top: 15px;
 }
 .offer p{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
     text-align: center;
     padding: 15px;
@@ -443,7 +442,7 @@ main{
     margin-top: 50px;
 }
 
-/* Styling for Travelers' Reviews Section */
+/* travelers' reviews section */
 .travelers-review {
     margin-top: 70px;
     padding: 40px;
@@ -462,7 +461,7 @@ main{
     color: #666;
 }
 
-/* Styling for Review Card */
+
 .review-card {
     display: flex;
     justify-content: space-around;
@@ -494,7 +493,6 @@ main{
     font-weight: 700;
 }
 .review-content p {
-    font-size: 1rem;
     color: #666;
 }
 
@@ -518,7 +516,7 @@ main{
         display:none;
     }
     nav .bars{
-        display: inline;
+        display: block;
     }
     .logo-area , nav .bars{
         text-align: center;
@@ -576,7 +574,7 @@ main{
         transform: rotate(-19.628deg);
         position: relative;
         bottom: 100px;
-        left: 360px;   
+        left: 350px;   
     }
     .offer h6{
         text-align: center;
