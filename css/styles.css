@@ -1,11 +1,12 @@
-/* google fonts Mulish */
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap');
+/* google fonts Mulish and Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Mulish:wght@400;600;700;800&display=swap');
+
 
 /* shared css */
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Mulish', 'Inter', sans-serif;
 }
 
 /* header styles */
@@ -367,7 +368,7 @@ main{
     transform: rotate(-19.628deg);
     position: relative;
     bottom: 170px;
-    left: 340px;   
+    left: 240px;   
 }
 .offer h6{
     text-align: center;
@@ -387,6 +388,57 @@ main{
     object-fit: cover;
 }
 
+/* footer styles */
+.footer-section{
+    background: rgba(19, 19, 24, 0.05);
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-area{
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+.footer-info{
+    max-width: 769px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footer-info p{
+    color: #5A5A5D;
+    text-align: center;
+    line-height: 26px;
+}
+.social-icons .icon{
+    color: #131318;
+    padding: 30px;
+}
+.footer-hr{
+    width: 872px;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+    border: none;
+    margin-top: 50px;
+}
+.footer-copyright p{
+    color: #131318;
+    font-family: Inter;
+    font-weight: 300;
+    margin-bottom: 110px;
+    margin-top: 50px;
+}
 /* Responsive media queries */
 /* Mobile devices */
 @media screen and (max-width: 600px) {
@@ -463,10 +515,30 @@ main{
         font-weight: 800;
         text-align: center;
         padding: 5px;
-        
     }
     .newsletter-form {
         width: 100%;
+    }
+    .footer-hr{
+        width: 335px;
+        margin-top: 30px;
+    }
+    .footer-area{
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    .footer-info{
+        margin-bottom: 10px;
+    }
+    .footer-info p{
+        line-height: 16px;
+    }
+    .social-icons .icon{
+        padding: 15px;
+    }
+    .footer-copyright p{
+        margin-bottom: 80px;
+        margin-top: 30px;
     }
 }
 
