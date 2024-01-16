@@ -44,6 +44,9 @@ nav li a{
     text-align: center;
     font-size: 1.12rem;
 }
+nav .bars{
+    display: none;
+}
 nav li a.active {
     color: #FF5400;
     font-weight: 700;
@@ -439,17 +442,87 @@ main{
     margin-bottom: 110px;
     margin-top: 50px;
 }
+
+/* Styling for Travelers' Reviews Section */
+.travelers-review {
+    margin-top: 70px;
+    padding: 40px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.travelers-review h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.travelers-review p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Styling for Review Card */
+.review-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+.review-card .card{
+    padding: 20px;
+    border: 1px solid tomato;
+    border-radius: 8px;
+    flex: 1;
+}
+.review-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+.rating {
+    font-size: 1.5rem;
+    color: #FFD700; 
+}
+.review-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 5px;
+    font-weight: 700;
+}
+.review-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
 /* Responsive media queries */
 /* Mobile devices */
 @media screen and (max-width: 600px) {
-    header, main {
+    header{
+        margin: 0;
+    } 
+    main {
         margin: 10px;
     }
 
-    nav, nav > ul, .find-area, .logo-area, .popular-tours, .destination-images .row,
+    .find-area,  .popular-tours, .destination-images .row,
     .choose-us-card-row-one,
-    .choose-us-card-row-two,.newsletter{
+    .choose-us-card-row-two,.newsletter,.review-card{
         flex-direction: column;
+    }
+    
+    nav > ul{
+        display:none;
+    }
+    nav .bars{
+        display: inline;
+    }
+    .logo-area , nav .bars{
+        text-align: center;
+        padding-top: 30px;
     }
     .logo-title{
         font-size: 1.25rem;
@@ -539,6 +612,9 @@ main{
     .footer-copyright p{
         margin-bottom: 80px;
         margin-top: 30px;
+    }
+    .travelers-review h2 {
+        font-size: 1.5rem;
     }
 }
 
