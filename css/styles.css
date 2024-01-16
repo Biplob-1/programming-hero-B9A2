@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Mulish', 'Inter', sans-serif;
+    /* border: 1px solid red; */
 }
 
 /* header styles */
@@ -64,7 +65,7 @@ nav li a.active {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 94%;
     z-index: 2;  
     padding: 1.875rem;
     margin: 7.5rem auto;
